@@ -1,0 +1,15 @@
+@import "../../assets/scss/variables";
+
+.input-box {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid $color-black;
+  margin: 16px 16px 16px 0;
+  padding: 5px;
+  font-size: 14px;
+  min-width: 200px;
+  transition: 0.25s ease-in-out;
+  &:focus {
+    border-bottom: 2px solid $color-link;
+  }
+}

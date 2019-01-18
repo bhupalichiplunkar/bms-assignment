@@ -1,0 +1,42 @@
+@include generic-defaults();
+@include cursor-defaults();
+@include ellipsis();
+@include flex-utils("flex");
+@include text-defaults();
+
+@include padding-defaults();
+@include padding-variant("xxs", $spacing-xxs);
+@include padding-variant("xs", $spacing-xs);
+@include padding-variant("sm", $spacing-sm);
+@include padding-variant("md", $spacing-md);
+@include padding-variant("lg", $spacing-lg);
+@include padding-variant("xl", $spacing-xl);
+
+@include margin-defaults();
+@include margin-variant("xxs", $spacing-xxs);
+@include margin-variant("xs", $spacing-xs);
+@include margin-variant("sm", $spacing-sm);
+@include margin-variant("md", $spacing-md);
+@include margin-variant("lg", $spacing-lg);
+@include margin-variant("xl", $spacing-xl);
+@include margin-variant("xxl", $spacing-xxl);
+
+@include paper-utils();
+@include width-variants("w");
+@include height-variants("h");
+
+@include hover-variants("vapor", $color-vapor);
+
+@include color-variant("info", $color-info, $color-white);
+@include color-variant("warning", $color-warning, $color-white);
+@include color-variant("success", $color-success, $color-white);
+@include color-variant("error", $color-error, $color-white);
+@include color-variant("border", $color-border, "inherit");
+@include color-variant("hover", $color-hover, "inherit");
+@include color-variant("selected", $color-selected, "inherit");
+@include color-variant("body", $color-body, "inherit");
+@include color-variant("black", $color-black, $color-white);
+@include color-variant("white", $color-white, "inherit");
+@include color-variant("link", $color-link, $color-white);
+@include color-variant("ghost", $color-ghost, "inherit");
+@include color-variant("vapor", $color-vapor, "inherit");
