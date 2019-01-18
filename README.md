@@ -1,8 +1,9 @@
 ## BMS Assignment
 
 Consists of solutions to both Assignment 1 and Assignment 2
-`/assignment-1` route corressponds to solution 1
-`/assignment-2` route corressponds to solution 2
+
+- `/assignment-1` route corressponds to solution 1
+- `/assignment-2` route corressponds to solution 2
 
 ### Steps
 
