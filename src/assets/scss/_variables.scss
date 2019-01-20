@@ -1,5 +1,8 @@
 $color-white: #ffffff;
+$color-white-o1: rgba(255, 225, 255, 0.1);
 $color-black: #000000;
+$color-black-o5: rgba(0, 0, 0, 0.5);
+$color-black-o9: rgba(0, 0, 0, 0.9);
 $color-ghost: #fafafa;
 $color-vapor: #f6f6f6 !default;
 $color-border: #dddddd;
@@ -8,7 +11,7 @@ $color-selected: rgba(0, 0, 0, 0.05);
 $color-link: #4285f4;
 $color-info: #5bc0de;
 $color-warning: #f0ad4e;
-$color-success: #5cb85c;
+$color-success: #279e76;
 $color-error: #d9534f;
 $color-body: #444;
 
@@ -20,3 +23,11 @@ $spacing-md: 16;
 $spacing-lg: 24;
 $spacing-xl: 32;
 $spacing-xxl: 48;
+
+$font-xs: 10px;
+$font-sm: 12px;
+$font-default: 14px;
+$font-md: 16px;
+$font-lg: 18px;
+$font-xl: 20px;
+$font-xxl: 22px;

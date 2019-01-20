@@ -1,0 +1,21 @@
+@import "../../assets/scss/variables";
+.assignment-2 {
+  min-height: calc(100vh - 67px);
+  .trailer-card-container {
+    width: 256px;
+    max-width: 256px;
+  }
+  .no-results {
+    min-height: calc(100vh - 160px);
+  }
+  .hover-effect {
+    text-decoration: underline !important;
+  }
+  .result-section {
+    background-color: rgba(0, 0, 0, 0.55);
+  }
+  .video-player,
+  .details {
+    min-width: 300px;
+  }
+}

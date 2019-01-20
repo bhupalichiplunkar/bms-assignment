@@ -213,6 +213,17 @@
   @include _spacing-variant("pd", $suffix, "padding", $size);
 }
 
+@mixin chip-variant($suffix, $color, $padding, $fontSize) {
+  .chip-#{$suffix} {
+    font-size: #{$fontSize};
+    padding: #{$padding}px;
+    border: 1px solid #{$color};
+    border-radius: 20px;
+    letter-spacing: 0.1px;
+    font-weight: 600px;
+  }
+}
+
 @mixin margin-defaults() {
   .mr {
     &-no {
@@ -535,6 +546,10 @@
       font-style: italic !important;
     }
 
+    &-bold {
+      font-weight: 600;
+    }
+
     &-upper {
       text-transform: uppercase !important;
     }
@@ -557,6 +572,38 @@
 
     &-right {
       text-align: right !important;
+    }
+  }
+}
+
+@mixin font-defaults() {
+  .font {
+    &-xs {
+      font-size: #{$font-xs};
+    }
+
+    &-sm {
+      font-size: #{$font-sm};
+    }
+
+    &-default {
+      font-size: #{$font-default};
+    }
+
+    &-md {
+      font-size: #{$font-md};
+    }
+
+    &-lg {
+      font-size: #{$font-lg};
+    }
+
+    &-xl {
+      font-size: #{$font-xl};
+    }
+
+    &-xxl {
+      font-size: #{$font-xxl};
     }
   }
 }

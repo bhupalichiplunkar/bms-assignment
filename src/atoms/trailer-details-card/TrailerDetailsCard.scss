@@ -1,0 +1,20 @@
+.trailer-details {
+  .stats-bar {
+    padding-top: 100px;
+    .circle-error {
+      width: 30px;
+      border: 1px solid #d9534f;
+      border-radius: 50%;
+    }
+    .circle-success {
+      width: 30px;
+      border: 1px solid #279e76;
+      border-radius: 50%;
+    }
+    .circle-warning {
+      width: 30px;
+      border: 1px solid #f0ad4e;
+      border-radius: 50%;
+    }
+  }
+}

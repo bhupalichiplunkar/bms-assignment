@@ -2,6 +2,11 @@ import React, { Component } from "react";
 import InputValidator from "..//../molecules/input-validator/InputValidator";
 import "./Assignment1.scss";
 
+//mock values 1: 9000-9003,9000-9010,9
+//mock values 2: 9000-9003,9000-9010,9011-9020
+//mock values 3: 98,9
+//mock values 4: 8
+
 class Assignment1 extends Component {
   constructor(props) {
     super(props);
@@ -13,14 +18,13 @@ class Assignment1 extends Component {
     this.timer = null;
   }
 
+  // @todo : clean logic - use recursion maybe
   findUniqueNumbers = inputs => {
     const finalData = [...this.state.initialData];
     const repeatedData = [];
     const inputArray = inputs.split(",");
-    debugger;
     inputArray.forEach(input => {
       const num = input.trim();
-      debugger;
       if (num.indexOf("-") === -1) {
         const numberInput = parseInt(num, 10);
         if (finalData.indexOf(numberInput) > -1) {
@@ -42,7 +46,6 @@ class Assignment1 extends Component {
         }
       }
     });
-    debugger;
     finalData.sort((a, b) => a - b);
     repeatedData.sort((a, b) => a - b);
 
@@ -61,13 +64,14 @@ class Assignment1 extends Component {
     this.timer = setTimeout(() => this.findUniqueNumbers(numbers), 1500);
   };
 
+  // @todo : ui modifications - show in colored background
   render() {
     const { initialData, repeatedData, finalData } = this.state;
     return (
       <div className="paper w-px-500 mr-auto">
         <div className="paper-title flex-hbox flex-cross-center flex-main-center">
           <div className="">Initial Array : </div>
-          <div className="mr-lr-sm text-link">[ {initialData.join(",")} ]</div>
+          <div className="mr-lr-sm text-link">[ {initialData.join(", ")} ]</div>
         </div>
         <div className="paper-content flex-hbox flex-cross-center flex-main-center">
           <InputValidator
@@ -89,7 +93,7 @@ class Assignment1 extends Component {
               <div className="pd-tb-sm">
                 <div className="">Result Data : </div>
                 <div className="mr-lr-sm text-success">
-                  {finalData.join(",")}
+                  {finalData.join(", ")}
                 </div>
               </div>
             ) : null}

@@ -1,0 +1,25 @@
+.container {
+  position: relative;
+  & > .dropdown-label {
+    width: 100%;
+    border: 1px solid #279e76;
+    color: #279e76;
+    letter-spacing: 0.1px;
+    cursor: pointer;
+    & > .label-string {
+      width: calc(100% - 21px);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  & > .dropdown-options {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: calc(100% + 5px);
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+    box-shadow: 0px 5px 5px rgba(255, 255, 255, 0.3);
+  }
+}

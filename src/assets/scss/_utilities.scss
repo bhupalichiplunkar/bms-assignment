@@ -3,6 +3,8 @@
 @include ellipsis();
 @include flex-utils("flex");
 @include text-defaults();
+@include font-defaults();
+@include paper-utils();
 
 @include padding-defaults();
 @include padding-variant("xxs", $spacing-xxs);
@@ -21,9 +23,12 @@
 @include margin-variant("xl", $spacing-xl);
 @include margin-variant("xxl", $spacing-xxl);
 
-@include paper-utils();
 @include width-variants("w");
 @include height-variants("h");
+
+@include chip-variant("white-xs", $color-white, $spacing-sm, $font-xs);
+@include chip-variant("white-sm", $color-white, $spacing-md, $font-sm);
+@include chip-variant("success-xs", $color-success, $spacing-sm, $font-sm);
 
 @include hover-variants("vapor", $color-vapor);
 
@@ -36,7 +41,10 @@
 @include color-variant("selected", $color-selected, "inherit");
 @include color-variant("body", $color-body, "inherit");
 @include color-variant("black", $color-black, $color-white);
+@include color-variant("black-o9", $color-black-o9, $color-white);
+@include color-variant("black-o5", $color-black-o5, $color-white);
 @include color-variant("white", $color-white, "inherit");
+@include color-variant("white-o1", $color-white-o1, $color-white);
 @include color-variant("link", $color-link, $color-white);
 @include color-variant("ghost", $color-ghost, "inherit");
 @include color-variant("vapor", $color-vapor, "inherit");
