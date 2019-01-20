@@ -55,6 +55,7 @@ class Assignment2 extends Component {
     }
   }
 
+  //@todo : scroll to video section
   loadTrailer = selectedIndex => {
     const imageNodes = document.querySelectorAll(".trailer-card-container");
     const selectedNodeOffsetTop = imageNodes[selectedIndex]
