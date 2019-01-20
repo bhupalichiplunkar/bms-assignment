@@ -14,6 +14,8 @@ Consists of solutions to both Assignment 1 and Assignment 2
 
 ## Organization
 
-- `Atoms` are smallest dumb components (Mostly Stateless)
-- `Molecules` are statefull components
-- `Organisms` are stateful / Higher Order components / Screens or Components that are connected to Applications State
+- `atoms` are smallest dumb components (Mostly Stateless)
+- `molecules` are statefull components
+- `organisms` are stateful / Higher Order components / Screens or Components that are connected to Applications State
+- `utils` are helpers/constants
+- `assets` are scss/icons/images/font-files used
